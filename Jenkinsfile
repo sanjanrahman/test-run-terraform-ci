@@ -6,8 +6,9 @@ stage('Checkout external proj') {
             sh "pwd"
             sh "ls -ltr"
             sh "cd terraform-workspace/projects/A"
-            sh "terraform init" 
+            sh "terraform init"
+            sh "echo done"
             
         }
      } 
-}
+
