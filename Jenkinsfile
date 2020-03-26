@@ -1,6 +1,5 @@
 pipeline {
   agent { label 'master' }
-
     stage('checkout') {
         steps {
             script {
