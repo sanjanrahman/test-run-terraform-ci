@@ -1,7 +1,7 @@
 pipeline {
   agent { label 'master' }
     stages('checkout') {
-        steps {
+        //steps {
             script {
                 echo "checking out code"
                 git branch: 'master',
@@ -9,7 +9,7 @@ pipeline {
                 url: 'https://github.com/sanjanrahman/test-run-terraform-ci'
                 }
             }
-        }
+  //      }
     stage('build') {
       steps {
         echo "...Building. terraform"
