@@ -1,8 +1,5 @@
-pipeline{
-agent{label'master'}
-stages{
-stage('checkout') {
-steps {
+pipeline{agent{label'master'}stages{stage('checkout'){
+steps{
 script{
 echo "TARGET_ENVIRONMENT: ${params.TARGET_ENVIRONMENT}"
 echo 'checkout the code from the develop'
