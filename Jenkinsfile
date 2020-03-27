@@ -1,4 +1,5 @@
-pipeline{agent{label'master'}stages{stage('checkout'){
+pipeline{
+agent{label'master'}stages{stage('checkout'){
 steps{
 script{
 echo"TARGET_ENVIRONMENT: ${params.TARGET_ENVIRONMENT}"
